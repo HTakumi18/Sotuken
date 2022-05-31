@@ -19,7 +19,13 @@
 
         // (4)HTTPリクエストを送信
         xmlHttpRequest.send();
+        
+        console.log = function (log) {
+document.getElementById('console_log').innerHTML += log + "<br>";
+}
     </script>
+<div id="console_log"></div>
+
 </head>
 
 <body>
