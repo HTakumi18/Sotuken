@@ -2,6 +2,8 @@
 <html>
 
 <head>
+<p>p02.html</p>
+
     <script>
         // (1)XMLHttpRequestオブジェクトを作成
         var xhr = new XMLHttpRequest();
@@ -22,11 +24,12 @@
         // (4)HTTPリクエストを送信
         xhr.send();
 
-console.log = function (log) {
-document.getElementById('console_log').innerHTML += log + "<br>";
-}
+        console.log = function (log) {
+        document.getElementById('console_log').innerHTML += log + "<br>";
+         }
     </script>
 <div id="console_log"></div>
+
 </head>
 
 </html>
