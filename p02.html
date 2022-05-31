@@ -13,17 +13,11 @@
             }
         }
 
-        let URL
+        var URL
         URL = 'https://shopping.yahooapis.jp/ShoppingWebService/V3/itemSearch?appid=dj00aiZpPTM2cFVJNHhBZDdBMSZzPWNvbnN1bWVyc2VjcmV0Jng9N2Q-&query=nike'
 
         // (3)HTTPのGETメソッドとアクセスする場所を指定
         xhr.open('GET', URL, true);
-
-        xhr.withCredentials = true;
-
-        //CROSエラー回避のヘッダを追加
-        xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
-        xhr.setRequestHeader("Access-Control-Allow-Headers", "Content-Type");
 
         // (4)HTTPリクエストを送信
         xhr.send();
